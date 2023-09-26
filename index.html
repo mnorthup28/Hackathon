@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project!</title>
+    <script src = 'band.js'></script>
+    <script src = 'app.js' defer></script>
+    <link rel = 'stylesheet' type = 'text/css' href = 'style.css'>
+</head>
+<div>
+    <button onclick="scrollToDiv('bach')">Bach</button>
+    <button onclick="scrollToDiv('beethoven')">Beethoven</button>
+    <button onclick="scrollToDiv('cage')">Cage</button>
+    <button onclick="scrollToDiv('randomcomposer')">Random</button>
+</div>
+<br>
+<body>
+    <div id = 'bach'>
+        <button id = "play">PLAY</button>
+    </div>
+    <br>
+    <div id = 'beethoven'>
+        <button id = 'beethovenPlay'>PLAY</button>
+        <img src = "//www.apollo-magazine.com/wp-content/uploads/2019/12/beethoven_0001-copy.jpg?w=730 730w, //www.apollo-magazine.com/wp-content/uploads/2019/12/beethoven_0001-copy.jpg?w=150 150w, //www.apollo-magazine.com/wp-content/uploads/2019/12/beethoven_0001-copy.jpg?w=300 300w, //www.apollo-magazine.com/wp-content/uploads/2019/12/beethoven_0001-copy.jpg?w=114 114w" id = 'btvpic'>
+    </div>
+    <br>
+    <div id = 'cage'>
+        <button id = '433cage'>PLAY</button>
+        <img src="https://www.pbs.org/wnet/americanmasters/files/2001/08/640px-Componist_John_Cage__kop_Bestanddeelnr_934-3585-e1644515061488-640x360.jpg">
+    </div>
+    <div id = 'randomcomposer'>
+        <button id = 'madeup'>PLAY</button>
+        <img src="https://c7.alamy.com/comp/2AXMJ2F/composer-gyorgy-ligeti-february-1-1984-2AXMJ2F.jpg">
+
+    <script>
+        function scrollToDiv(divId) {
+            const element = document.getElementById(divId);
+            if (element) {
+                element.scrollIntoView({ behavior: "smooth" });
+            }
+        }
+    </script>
+</body>
+</html>
